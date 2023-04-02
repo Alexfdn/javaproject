@@ -10,13 +10,10 @@ import java.util.ArrayList;
 
 public class Example16 {
         public static void main(String[] args) {
-            //Создание объекта класса Scanner для считывания числа введенного в консоль
             Scanner id = new Scanner(System.in);
             System.out.println("Введите размер массива");
-            //Запись в переменную size
             int size = id.nextInt();
             System.out.println("Размер массива равен " + size);
-            //Создание массива с размером введенным из консоли
             int[] nums = new int[size];
             Random random = new Random();
             int minimal = 200;
