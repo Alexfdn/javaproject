@@ -7,29 +7,29 @@ public class Example18 {
             String text = id.nextLine();
             System.out.print("Введите ключ: ");
             int shift = id.nextInt();
-            String encryptStr = Caeser.encrypt(text, shift);
+            String encryptStr = code.encrypt(text, shift);
             System.out.print("Текст после преобразования :" + "\"" + encryptStr + "\"");
             System.out.print("\nВыполнить обратное преобразование? (y/n)");
-            boolean cool = false;
-            while (!cool) {
+            boolean c = false;
+            while (!c) {
                 String reply = id.next();
                 if (reply.toLowerCase().equals("y")) {
-                    String decryptStr = Caeser.decrypt(encryptStr, shift);
+                    String decryptStr = code.decrypt(encryptStr, shift);
                     System.out.println(decryptStr);
-                    cool = true;
+                    c = true;
                 }
                 else if (reply.toLowerCase().equals("n")) {
                     System.out.println("До свидания!");
-                    cool = true;
+                    c = true;
                 }
 
                 else {
                     System.out.println("Введите корректный ответ: ");
-                    cool = false;
+                    c = false;
                 }
             }
         }
-        private static class Caeser {
+        private static class code {
             static String encryptText;
             private static String encrypt(String enText, int key)
             {
