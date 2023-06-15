@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><division>
+    
+    <employee>
+        <name>Петр</name>
+        <patronymic>Петрович</patronymic>
+        <surname>Петров</surname>
+	    <position>Менеджер</position>
+    </employee>
+<employee><name>Артем</name><patronymic>Артемович</patronymic><surname>Артемов</surname><position>Аналитик</position></employee></division>
